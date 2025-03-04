@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+let per = prompt("enter your percentage : (0 - 100)");
+let grade;
+if (per >= 90){
+    grade = "A1";
+}
+else if (per >= 80){
+    grade = "A";
+}
+else if (per >= 70){
+    grade = "B";
+}  
+else if (per >= 60){
+    grade = "C";
+}
+else if (per >= 50){
+    grade = "D";
+}
+else if (per <= 40){
+    grade = "F";
+}
+
+document.write(" According your percentage your grade is : " + grade);
+</script>
+</body>
+</html>

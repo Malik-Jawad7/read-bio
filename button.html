@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" placeholder="Enter your name" id="one">
+    <button onclick="ayhello()">Click Me & Clear</button>
+    <h1 id="nameInput"></h1>
+
+    <script>
+        function ayhello() {
+            let InputField = document.getElementById("one");
+            let inputValue = InputField.value;
+
+            if (inputValue.trim() !== "") {
+                document.getElementById("nameInput").innerText = "You entered: " + inputValue;
+                InputField.value = "";  // Clear the input field
+            } else {
+                alert("Please enter something");
+            }
+        }
+    </script>
+
+</body>
+</html>

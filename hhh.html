@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-section {
+            display: flex;
+            width: 100%;
+            height: 400px; 
+        }
+
+        .hero-text {
+            flex: 1;
+            background-color: #004080; /* Dark Blue */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .hero-images {
+            flex: 1;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 20px; 
+        }
+
+        .hero-images img {
+            width: 80px; 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Add a smooth transition for hover effects */
+        }
+
+        .hero-images img:nth-child(1) {
+            transform: rotate(-10deg);
+        }
+
+        .hero-images img:nth-child(2) {
+            transform: rotate(15deg);
+        }
+
+        .hero-images img:nth-child(3) {
+            transform: rotate(-20deg);
+        }
+
+        .hero-images img:nth-child(4) {
+            transform: rotate(10deg);
+        }
+
+        .hero-images img:hover {
+            transform: rotate(0deg); /* Reset rotation on hover */
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Find gifts for dads who have it all</h1>
+            <p>Explore our curated collection of gifts and gadgets for every occasion.</p>
+        </div>
+
+        <div class="hero-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCvWDVmfI-I1NJP_jZGNXw95BsIPhuCqVbg&s" alt="Headphones">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgFiijGxMECUN7OHj8mvN8FQxHB8astBJMA&s" alt="Camera">
+            <img src="https://smartbuy-me.com/cdn/shop/files/ABJ1501ST0241_1.jpg?v=1722968254&width=1200" alt="Phone">
+            <img src="data:image/jpeg;base64,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" alt="Speaker">
+            <img src="https://media.istockphoto.com/id/897713356/photo/shades.jpg?s=1024x1024&w=is&k=20&c=R-ROMTBFrti59EHiNHnhaSWgffLRD8covMe6ZoiZBfo=" alt="Sunglasses">
+        </div>
+    </div>
+</body>
+</html>
